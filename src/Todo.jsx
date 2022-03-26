@@ -7,7 +7,7 @@ const Todo = ({todo,toggleTask,removeTask,index}) => {
                 className={todo.complete ? 'item-text strike' : 'item-text'}
                 onClick={() => toggleTask(todo.id)}
                 >
-                {index} - {todo.task}
+                {index} : {todo.task}
             </div>
             <div className='item-delete' onClick={() => removeTask(todo.id)}>
                 X
