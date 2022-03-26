@@ -7,10 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --dark-color: linear-gradient(90deg, rgba(214,214,214,1) 0%, rgba(0,0,0,1) 58%);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 .App {
   text-align: center;
@@ -74,3 +78,4 @@ code {
 .strike {
   text-decoration: line-through;
 }
+

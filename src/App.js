@@ -3,7 +3,6 @@ import TodoForm from "./TodoForm";
 import Todo from "./Todo";
 
 
-
 function App() {
   const [todos, setTodos] = useState([])
 
@@ -36,11 +35,12 @@ function App() {
         <h1>Cписок задач: {todos.length}</h1>
       </header>
       <TodoForm addTask={addTask}/>
-      {todos.map((todo) => {
+      {todos.map((todo,idx) => {
         return (
           <Todo 
               todo={todo}
               key={todo.id}
+              index={idx + 1}
               toggleTask={handleToggle}
               removeTask={removeTask}
             />
